@@ -18,20 +18,34 @@ body {
 
 body * {
     font-family: 'Intet', sans-serif;
+    line-height: 160%;
 }
 
 main * {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
 }
 
 main {
     max-width: 580px;
     width: 90%;
     margin: auto;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
 }
 
 section {
     color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
 }
 
 section h2 {
@@ -41,4 +55,22 @@ section h2 {
 section p {
     letter-spacing: -0.18px;
     color: #A1A1AA;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    /*distanciamento entre as BOX*/
+    margin-top: 24px;
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 70px;
 }
