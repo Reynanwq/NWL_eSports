@@ -15,6 +15,11 @@ header div {
     border-radius: 50%;
     display: flex;
     padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
 }
 
 header div img {
@@ -39,14 +44,10 @@ body * {
     line-height: 160%;
 }
 
-main * {
-    /*border: solid 1px red;*/
-}
-
 main {
     max-width: 580px;
     width: 90%;
-    margin: auto;
+    margin: 32px auto;
     display: grid;
     gap: 24px;
 }
@@ -80,6 +81,14 @@ section ul {
     gap: 16px;
     /*distanciamento entre as BOX*/
     margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
 }
 
 .games-list img {
