@@ -6,6 +6,7 @@
 
 header {
     padding-top: 32px;
+    height: calc(32px + 120px);
 }
 
 header div {
@@ -100,4 +101,52 @@ section ul li:hover {
     border-radius: 50%;
     width: 70px;
     border: 1px solid #443e54;
+}
+
+
+/*animation*/
+
+header div {
+    animation: FromTop 0.7s 0.4s backwards;
+}
+
+main section {
+    animation: FromBottom 0.7s backwards;
+}
+
+
+/*aplicando elemento por elemento*/
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .6s;
+}
+
+@keyframes FromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes FromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
